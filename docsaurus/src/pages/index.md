@@ -1,9 +1,6 @@
 ---
-title: Introduction
-sidebar_position: 1
-slug: /
+title: Home
 ---
-
 # Introduction
 
 The growing demand for healthcare services has placed significant pressure on hospitals, leading to overcrowded emergency departments, long patient wait times, and increased workloads for medical staff. Efficient and accurate triage is essential to prioritize patients based on the severity of their conditions, ensuring that critical cases receive immediate attention while optimizing hospital resources. However, the current triage process is often time-consuming and relies heavily on human decision-making, which can introduce inconsistencies and inefficiencies.
@@ -16,3 +13,6 @@ Increased Efficiency – Automating the initial triage assessment can significan
 Improved Accuracy – LLMs trained on vast amounts of medical data can assist in making more consistent and data-driven triage decisions.
 Scalability – The system can be deployed in various healthcare settings, from emergency rooms to telemedicine platforms, to improve patient flow management.
 Better Resource Allocation – By accurately categorizing patient urgency, hospitals can allocate medical resources more effectively and reduce unnecessary emergency department visits.
+
+
+
