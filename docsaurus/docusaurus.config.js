@@ -14,11 +14,8 @@ const config = {
   tagline: "Dinosaurs are cool",
   favicon: "img/inteli.png",
 
-  // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  url: "https://Inteli-College.github.io",
+  baseUrl: "/2025-1A-T03-G22-PUBLICO",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -67,7 +64,7 @@ const config = {
             position: "left",
             label: "Docs",
           },
-          ],
+        ],
       },
       footer: {
         style: "dark",
