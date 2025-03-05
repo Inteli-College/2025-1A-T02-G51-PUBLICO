@@ -15,7 +15,7 @@ const config = {
   favicon: "img/inteli.png",
 
   url: "https://Inteli-College.github.io",
-  baseUrl: "/2025-1A-T03-G22-PUBLICO",
+  baseUrl: "/2025-1A-T02-G51-PUBLICO",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
