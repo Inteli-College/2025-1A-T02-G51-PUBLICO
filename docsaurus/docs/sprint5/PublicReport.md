@@ -2,29 +2,28 @@
 
 
 ## Summary
-1. [Introduction](#-1-introduction)  
-2. [Sprint 1](#-2-sprint-1)  
-   - [Project Plan](#project-plan)  
-3. [Sprint 2](#-3-sprint-2)  
-   - [Value Proposition Canvas](#value-proposition-canvas)  
-   - [Financial Analysis](#financial-analysis)  
-   - [Personas](#personas)  
-   - [Risk Matrix](#risk-matrix)  
-   - [User Stories](#user-stories)  
-4. [Sprint 3](#-4-sprint-3)  
-   - [Figma Prototype](#figma-prototype)  
-   - [Triage Flow Definition](#triage-flow-definition)  
-5. [Sprint 4](#-5-sprint-4)  
-   - [User Story Updates](#user-story-updates)  
-   - [Architecture Diagram](#architecture-diagram)  
-   - [Database Modeling](#database-modeling)  
-6. [Sprint 5](#-6-sprint-5)  
-   - [Project Plan – Module 2](#project-plan--module-2)  
-   - [Public Report – Module 1](#public-report--module-1)  
-7. [Conclusion](#-7-conclusion)
+1. [Introduction](#1-introduction)  
+2. [Sprint 1](#2-sprint-1)  
+   - [Project Plan](#-project-plan)  
+3. [Sprint 2](#3-sprint-2)  
+   - [Value Proposition Canvas](#-value-proposition-canvas)  
+   - [Financial Analysis](#-financial-analysis)  
+   - [Personas](#-personas)  
+   - [Risk Matrix](#-risk-matrix)  
+   - [User Stories](#-user-stories)  
+4. [Sprint 3](#4-sprint-3)  
+   - [Figma Prototype](#-figma-prototype)  
+   - [Triage Flow Definition](#-triage-flow-definition)  
+5. [Sprint 4](#5-sprint-4)  
+   - [User Story Updates](#-user-story-updates)  
+   - [Architecture Diagram](#-architecture-diagram)  
+   - [Database Modeling](#-database-modeling)  
+6. [Sprint 5](#6-sprint-5)  
+   - [Project Plan – Module 2](#-project-plan--module-2)  
+   - [Public Report – Module 1](#-public-report--module-1)  
+7. [Conclusion](#7-conclusion)
 
----------------------------------------------------------------------------------------------------------------------------------------
-
+------------------------------------------------------------
 
 
 ## 1. Introduction
