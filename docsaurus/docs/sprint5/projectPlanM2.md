@@ -15,7 +15,6 @@
 An application that allows patients to perform hospital triage remotely, directing them to the most appropriate facility in the hospital network for their care. The solution aims to reduce the number of unnecessary trips to healthcare centers and avoid redundant triages in different units of the network.
 
 ---
-
 ## Problem Statement
 
 The proposed solution seeks to address the high number of trips made by patients to hospital centers, as well as the repetition of triages for the same health issue of the same patient.
