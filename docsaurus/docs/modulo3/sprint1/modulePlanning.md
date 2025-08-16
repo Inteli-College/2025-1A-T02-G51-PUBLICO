@@ -29,16 +29,16 @@ description: Planning for Module 3 Sprint 1
 
 | Task                                 | Priority | Impact |   Risk | Dependencies                                   | Effort | Status  |
 | ------------------------------------ | -------- | -----: | -----: | ---------------------------------------------- | -------- | ------- |
-| 1) Logic to save answers             | High     |   High | Medium | MongoDB, `FormAnswers` model, WhatsApp Webhook | M        | Delayed |
-| 2) Send next message after an answer | High     |   High | Medium | Task 1, stable Webhook, queue/lock             | M        | Delayed |
-| 3) Doctor creates form via WhatsApp  | Medium   |   High | Medium | Auth, parsing, persistence                     | M–L      | Delayed |
-| 4) LLM summary flow                  | Medium   | Medium |   High | Consolidated data, prompts, cost               | M        | Delayed |
+| 1. Logic to save answers             | High     |   High | Medium | MongoDB, `FormAnswers` model, WhatsApp Webhook | M        | Delayed |
+| 2. Send next message after an answer | High     |   High | Medium | Task 1, stable Webhook, queue/lock             | M        | Delayed |
+| 3. Doctor creates form via WhatsApp  | Medium   |   High | Medium | Auth, parsing, persistence                     | M–L      | Delayed |
+| 4. LLM summary flow                  | Medium   | Medium |   High | Consolidated data, prompts, cost               | M        | Delayed |
 
 Effort: P (small), M (medium), G (large).
 
 ---
 
-## 1) Logic to save answers
+## 1. Logic to save answers
 
 **Description**
 Persist patient answers by `formId` and `userCellphone`, update `FormQuestionPosition`, ensure idempotency (avoid duplicates on retries), and maintain `created_at/updated_at`.
@@ -72,7 +72,7 @@ Persist patient answers by `formId` and `userCellphone`, update `FormQuestionPos
 
 ---
 
-## 2) Logic to **send the next message** after an answer
+## 2. Logic to **send the next message** after an answer
 
 **Description**
 After processing an answer, determine and send the next question based on `FormQuestionPosition`, including simple branching (e.g., if pain ≥7, raise priority).
@@ -105,7 +105,7 @@ After processing an answer, determine and send the next question based on `FormQ
 
 ---
 
-## 3) **Doctor creates a form via WhatsApp**
+## 3. **Doctor creates a form via WhatsApp**
 
 **Description**
 Conversational flow so the doctor can create/edit/publish forms without a dedicated web UI.
@@ -145,7 +145,7 @@ Conversational flow so the doctor can create/edit/publish forms without a dedica
 
 ---
 
-## 4) **LLM summary flow**
+## 4. **LLM summary flow**
 
 **Description**
 Generate a **structured clinical summary** at the end of the form: chief complaint, pain (0–10), red flags, initial recommendation, and **risk flags**.
