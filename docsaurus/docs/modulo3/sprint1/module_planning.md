@@ -23,14 +23,14 @@
 
 ## Overview
 
-| Task                                 | Priority | Impact |   Risk | Dependencies                                   | Effort\* | Status  |
+| Task                                 | Priority | Impact |   Risk | Dependencies                                   | Effort | Status  |
 | ------------------------------------ | -------- | -----: | -----: | ---------------------------------------------- | -------- | ------- |
 | 1) Logic to save answers             | High     |   High | Medium | MongoDB, `FormAnswers` model, WhatsApp Webhook | M        | Delayed |
 | 2) Send next message after an answer | High     |   High | Medium | Task 1, stable Webhook, queue/lock             | M        | Delayed |
 | 3) Doctor creates form via WhatsApp  | Medium   |   High | Medium | Auth, parsing, persistence                     | M–L      | Delayed |
 | 4) LLM summary flow                  | Medium   | Medium |   High | Consolidated data, prompts, cost               | M        | Delayed |
 
-\*Effort: P (small), M (medium), G (large).
+Effort: P (small), M (medium), G (large).
 
 ---
 
@@ -108,10 +108,10 @@ Conversational flow so the doctor can create/edit/publish forms without a dedica
 
 **Proposed flow (macro)**
 
-1. **/new\_form** → ask for title.
-2. **/add\_question** → collect: `question_text`, `type` (`text`/`radio`), `options` (if `radio`).
+1. **/new_form** → ask for title.
+2. **/add_question** → collect: `question_text`, `type` (`text`/`radio`), `options` (if `radio`).
 3. **/list** → show numbered structure.
-4. **/remove {n}** and **/move {n} {new\_n}**.
+4. **/remove {n}** and **/move {n} {new_n}**.
 5. **/publish** → generate `formId` and link/ref.
 6. **/preview** → send a simulated flow to the doctor.
 
