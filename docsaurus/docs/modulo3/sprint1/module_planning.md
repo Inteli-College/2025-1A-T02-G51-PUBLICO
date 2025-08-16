@@ -92,7 +92,7 @@ After processing an answer, determine and send the next question based on `FormQ
 * [ ] Introduce a **queue/job** layer (e.g., Redis Queue or Celery) for async sends.
 * [ ] Implement short-lived lock per (`formId`, `userCellphone`).
 * [ ] Deterministic `next_question(position)` mapping.
-* [ ] Structured logs (request\_id, message\_id, user).
+* [ ] Structured logs (`request_id`, `message_id`, `user`).
 
 **Metrics**
 
@@ -174,7 +174,9 @@ Generate a **structured clinical summary** at the end of the form: chief complai
 
 ## Cross-cutting dependencies and techniques
 
-* **Database**: MongoDB with indexes (unique: `formId+userCellphone`; secondary: `updated_at`), and collections: `forms`, `form_answers`, `events`.
+* **Database**: MongoDB with indexes:
+  - `unique: formId+userCellphone`
+  - `secondary: updated_at`
 * **Idempotency**: key by `message_id` (WhatsApp) + content hash.
 * **Queue/Jobs**: decouple webhook from sending (resilience and throughput).
 * **Observability**: structured logs (JSON), metrics (latency, error rate), traces by `correlation_id`.
