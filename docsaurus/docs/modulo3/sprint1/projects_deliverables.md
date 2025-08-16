@@ -208,7 +208,6 @@
 | LLM hallucinations         | L          | H      | Field-citations, strict prompts, rule-based validation |
 | Integration delays with HC | M          | H      | CSV fallback, early mapping review, weekly sync        |
 | Data privacy gaps          | L          | H      | LGPD checklist, DPA, regular audits                    |
-| Demo instability           | M          | M      | Freeze Oct 7, feature flags, backup video              |
 
 ---
 
