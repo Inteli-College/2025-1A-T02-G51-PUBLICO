@@ -150,10 +150,10 @@ export interface QuestionDef {
   };
   enum_key?: string; // for type=="enum"
   nl_instructions?: string; // hints for the LLM parser
-  metadata?: Record<string, any>;
+  metadata?: Record(string, any);
 }
 
-export interface ParsedAnswer<T=any> {
+export interface ParsedAnswer(T=any) {
   question_id: string;
   value: T; // number | string | enum token
   additional_info?: string; // LLM interpreted text, units, qualifiers
@@ -183,7 +183,7 @@ Validation pipeline per answer:
 ### 4.2 Edge condition expression
 
 * Minimal safe DSL (JSON): logical **all/any/none** over predicates.
-* Predicates access prior answers by `answers.<question_id>.value`.
+* Predicates access prior answers by `answers.(question_id).value`.
 
 Examples:
 
