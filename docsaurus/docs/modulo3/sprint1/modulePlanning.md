@@ -13,10 +13,10 @@ description: Planning for Module 3 Sprint 1
 - [Recovery Plan — Delayed Tasks (Semester 2025.2)](#recovery-plan--delayed-tasks-semester-20252)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
-  - [1) Logic to save answers](#1-logic-to-save-answers)
-  - [2) Logic to **send the next message** after an answer](#2-logic-to-send-the-next-message-after-an-answer)
-  - [3) **Doctor creates a form via WhatsApp**](#3-doctor-creates-a-form-via-whatsapp)
-  - [4) **LLM summary flow**](#4-llm-summary-flow)
+  - [1. Logic to save answers](#1-logic-to-save-answers)
+  - [2. Logic to **send the next message** after an answer](#2-logic-to-send-the-next-message-after-an-answer)
+  - [3. **Doctor creates a form via WhatsApp**](#3-doctor-creates-a-form-via-whatsapp)
+  - [4. **LLM summary flow**](#4-llm-summary-flow)
   - [Cross-cutting dependencies and techniques](#cross-cutting-dependencies-and-techniques)
   - [Suggested schedule (biweekly sprints)](#suggested-schedule-biweekly-sprints)
   - [Risks and mitigations](#risks-and-mitigations)
@@ -67,8 +67,8 @@ Persist patient answers by `formId` and `userCellphone`, update `FormQuestionPos
 
 **Metrics**
 
-* Persistence error rate < 0.5%.
-* Duplicates per 1,000 messages < 2.
+* Persistence error rate &lt; 0.5%.
+* Duplicates per 1,000 messages &lt; 2.
 
 ---
 
@@ -100,8 +100,8 @@ After processing an answer, determine and send the next question based on `FormQ
 
 **Metrics**
 
-* P95 latency “answer → next question” < 1.5 s.
-* Unintended duplicate sends per user < 1/week.
+* P95 latency “answer → next question” &lt; 1.5 s.
+* Unintended duplicate sends per user &lt; 1/week.
 
 ---
 
@@ -115,7 +115,7 @@ Conversational flow so the doctor can create/edit/publish forms without a dedica
 1. **/new_form** → ask for title.
 2. **/add_question** → collect: `question_text`, `type` (`text`/`radio`), `options` (if `radio`).
 3. **/list** → show numbered structure.
-4. **/remove {n}** and **/move {n} {new_n}**.
+4. **/remove** and **/move**.
 5. **/publish** → generate `formId` and link/ref.
 6. **/preview** → send a simulated flow to the doctor.
 
@@ -136,12 +136,12 @@ Conversational flow so the doctor can create/edit/publish forms without a dedica
 
 * [ ] Implement a state machine for the “Form Builder”.
 * [ ] Integrity checks (min 1 question; `radio` with ≥2 options).
-* [ ] **/duplicate {formId}** to reuse forms.
+* [ ] **/duplicate formId** to reuse forms.
 
 **Metrics**
 
-* Avg time to create/publish a form < 3 min.
-* Validation errors per creation < 3%.
+* Avg time to create/publish a form &lt; 3 min.
+* Validation errors per creation &lt; 3%.
 
 ---
 
@@ -172,7 +172,7 @@ Generate a **structured clinical summary** at the end of the form: chief complai
 **Metrics**
 
 * Valid JSON parse rate ≥ 99%.
-* Generation time P95 < 1.5 s (local/cached model) or < 5 s (external API).
+* Generation time P95 &lt; 1.5 s (local/cached model) or &lt; 5 s (external API).
 
 ---
 
