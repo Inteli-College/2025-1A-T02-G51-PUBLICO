@@ -52,20 +52,17 @@ Completed “Marketing Plan” section validated for market consistency and busi
 ---
 
 ## Week 4 – Operational Plan and Technical Structure | 03/11 (Mon) - 07/11 (Fri)
-**Objective:** Detail the system’s operation, technical infrastructure, and required resources.
+**Objective:** Detail the business operations and resources required for implementation.
 
 ### Deliverables:
-- Complete description of the **Operational Flow** (from initial interaction to medical report delivery)
-- Detailed **Technological Infrastructure**
-  - Backend (Node.js/TypeScript, LLM integrations)
-  - Data storage, security, and GDPR/LGPD compliance
-  - Integration with WhatsApp API
+- Complete description of the **Operational Flow** (from initial interaction to delivery of the service)
+- Brief mention of **Technological Infrastructure** (overview of the systems and tools supporting operations)
 - Definition of **Team Roles and Responsibilities** (development, AI, product, compliance)
-- Description of **Internal Processes** (maintenance, model updates, support)
+- Description of **Internal Processes** (service maintenance, updates, support)
 - Development of an **Operational Timeline** (MVP, pilot, expansion)
 
 **Weekly Deliverable:**
-Completed “Operational Plan” section, including diagram or textual description of the system’s workflow.
+Completed “Operational Plan” section with clear overview of operations and required resources.
 
 ---
 
@@ -76,14 +73,14 @@ Completed “Operational Plan” section, including diagram or textual descripti
 - Completion of the **Financial Plan**
   - Estimate of initial investment
   - Fixed and variable costs
-  - Revenue projection (12–24 months)
+  - Revenue projection (6-12 months)
   - Scenarios: optimistic, realistic, and conservative
   - Break-even point and payback period
 - Development of the **Feasibility and Risk Analysis**
   - Technical, ethical, and regulatory risks
   - Mitigation strategies
-- Brief writing of the **Growth and Innovation Projection** (without emphasis)
-- Preparation of the **Final Version** for presentation (PDF and editable version)
+- Brief writing of the **Growth and Innovation Projection**
+- Preparation of the **Final Version** (PDF and editable version)
 
 **Weekly Deliverable:**
 Completed Business Plan, ready for delivery and presentation.
