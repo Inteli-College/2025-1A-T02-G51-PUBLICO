@@ -5,8 +5,7 @@
 
 ## Executive Summary
 
-### TO-DO: DEFINIR NOME DA APLICAÇÃO
-**Solution Name:**
+**Solution Name: FastTriage**
 
 **Overview:**
 The project proposes an application designed to automate the hospital triage process using a Large Language Model (LLM) to interact with patients and collect information through a conversational interface. The system conducts an adaptive questionnaire — starting with general questions and then progressing to more specific ones based on patient responses — ultimately producing a detailed report for the attending physician. This automation reduces the time spent by nurses in manual data collection and enhances operational efficiency, while keeping healthcare professionals central to the process.
