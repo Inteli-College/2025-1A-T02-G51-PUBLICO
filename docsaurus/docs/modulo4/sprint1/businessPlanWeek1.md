@@ -32,7 +32,6 @@ To significantly improve intelligent healthcare automation in Brazil, aiming to 
 - Compliance with LGPD and strong emphasis on privacy and data security.
 - Reduction in triage time and relief of nursing workload without workforce reduction.
 
-### TO-DO: VALIDAR COMO SERÁ O MODELO DE NEGÓCIOS
 **Business Model:**
 B2B SaaS (Software as a Service) solution offered to hospitals and clinics. The model involves subscription-based licensing, with pricing that may vary according to the volume of patient triages or hospital size. Future revenue opportunities include integration with hospital management systems (EHR) and enterprise customizations.
 
@@ -91,15 +90,35 @@ Secondary audiences include urgent care clinics, medical networks, and telemedic
 
 **Direct Competitors**
 Direct competitors are companies offering solutions that partially or fully automate the triage process or use AI chatbots for clinical data collection. Examples include:
-- T.C. (Triage Chatbot) – prototype chat-based triage assistant focused on symptom mapping.
-- Infermedica – provides a global API for symptom checking and pre-diagnosis, used by telemedicine companies.
+- T.C. (Triage Chatbot) – prototype chat-based triage assistant focused on symptom mapping;
+- Infermedica – provides a global API for symptom checking and pre-diagnosis, used by telemedicine companies;
 - Ada Health – AI-driven health assistant that performs symptom analysis and suggests care pathways.
 
 These competitors show that automated triage is a growing field, but few have localization for the Brazilian context or integration with existing hospital workflows (especially WhatsApp).
 
 **Indirect Competitors**
 Indirect competitors are solutions that contribute to healthcare automation but do not directly target triage:
-- General-purpose AI chatbots (e.g., IBM Watson Assistant, Microsoft Health Bot) that could be adapted for triage workflows.
+- General-purpose AI chatbots (e.g., IBM Watson Assistant, Microsoft Health Bot) that could be adapted for triage workflows;
 - Manual digital forms or screening tools used by hospitals for pre-appointment data collection.
 
 FastTriage differentiates itself by combining adaptive conversational logic (LLM), local compliance with LGPD, and integration via WhatsApp, a communication channel already familiar to most Brazilian patients.
+
+---
+
+## SWOT Analysis
+
+![SWOTAnalysis](<./img/swot_analysis.png>)
+
+---
+
+## Market Risks
+
+- Adoption resistance: Some professionals may hesitate to rely on AI in sensitive healthcare contexts;
+
+- Regulatory compliance: Constant monitoring is required to ensure compliance with LGPD and potential future ANVISA regulations;
+
+- Technological dependency: Reliance on stable cloud services and LLM providers (e.g., IBM Cloud);
+
+- Competition scaling: Entry of global players with stronger financial backing could challenge domestic solutions;
+
+- Ethical sensitivity: Misuse or poor interpretation of AI responses could undermine trust if not properly supervised.
