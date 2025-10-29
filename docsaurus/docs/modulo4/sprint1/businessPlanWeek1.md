@@ -58,3 +58,48 @@ From a technical standpoint, the system uses a modular architecture composed of 
 - **IBM Cloud Infrastructure**: Ensures high availability and reliability by using IBM Cloud services to host the application.
 
 The design prioritizes strict compliance with privacy standards (LGPD), ensuring traceability of all interactions while safeguarding personal health information.
+
+---
+
+# Market Analysis
+**Objective:** Understand the business environment and consolidate the justification for the market opportunity.
+
+---
+
+## Industry Analysis
+The healthtech sector has grown rapidly in Brazil, driven by the demand for efficiency, digitization, and accessibility in healthcare services. According to data from Distrito HealthTech Report 2024, there are over 1,000 startups in the Brazilian healthtech ecosystem, with strong expansion in areas like telemedicine, hospital management, and AI-based clinical automation.
+
+Artificial Intelligence (AI) applications in healthcare have been particularly impactful in diagnostic support, operational optimization, and patient interaction automation. However, there is still limited adoption of solutions aimed specifically at hospital triage, creating an open opportunity for innovation.
+
+The increasing pressure on hospitals to reduce waiting times and optimize patient flow — especially in emergency departments — reinforces the relevance of tools that can automate and standardize early-stage care. The combination of conversational AI and structured data collection, as proposed by FastTriage, aligns with a clear market trend: augmenting medical decision-making while maintaining human oversight and patient safety.
+
+---
+
+## Target Audience
+The primary target audience for FastTriage consists of medium and large hospitals, particularly those with high emergency room volumes or intensive outpatient services.
+
+Priority segments:
+- Public hospitals (SUS network) seeking operational efficiency with limited staffing.
+- Private hospitals and clinics focused on improving patient experience and reducing triage bottlenecks.
+- Healthtech system integrators looking to expand their portfolio with AI-driven solutions.
+
+Secondary audiences include urgent care clinics, medical networks, and telemedicine platforms that could integrate FastTriage into their existing service workflows.
+
+---
+
+## Competitor Analysis
+
+**Direct Competitors**
+Direct competitors are companies offering solutions that partially or fully automate the triage process or use AI chatbots for clinical data collection. Examples include:
+- T.C. (Triage Chatbot) – prototype chat-based triage assistant focused on symptom mapping.
+- Infermedica – provides a global API for symptom checking and pre-diagnosis, used by telemedicine companies.
+- Ada Health – AI-driven health assistant that performs symptom analysis and suggests care pathways.
+
+These competitors show that automated triage is a growing field, but few have localization for the Brazilian context or integration with existing hospital workflows (especially WhatsApp).
+
+**Indirect Competitors**
+Indirect competitors are solutions that contribute to healthcare automation but do not directly target triage:
+- General-purpose AI chatbots (e.g., IBM Watson Assistant, Microsoft Health Bot) that could be adapted for triage workflows.
+- Manual digital forms or screening tools used by hospitals for pre-appointment data collection.
+
+FastTriage differentiates itself by combining adaptive conversational logic (LLM), local compliance with LGPD, and integration via WhatsApp, a communication channel already familiar to most Brazilian patients.
