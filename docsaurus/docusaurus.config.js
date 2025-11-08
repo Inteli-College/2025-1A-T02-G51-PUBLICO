@@ -10,8 +10,9 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "Triage Ai",
+  tagline:
+    "Automating the triage process in emergency rooms using artificial intelligence",
   favicon: "img/inteli.png",
 
   url: "https://Inteli-College.github.io",
@@ -19,8 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "Triage Ai", // Usually your GitHub org/user name.
+  projectName: "Triage Ai", // Usually your repo name.
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -63,6 +64,11 @@ const config = {
             sidebarId: "tutorialSidebar",
             position: "left",
             label: "Docs",
+          },
+          {
+            href: "https://github.com/Inteli-College/2025-1A-T02-G51-PUBLICO", // External link
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
