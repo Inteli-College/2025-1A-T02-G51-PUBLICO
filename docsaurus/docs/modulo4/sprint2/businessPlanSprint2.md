@@ -75,3 +75,70 @@ In later stages, support evolves into:
 - Training and documentation
 - Periodic updates
 - On-demand technical assistance
+
+---
+# Operational Plan and Technical Structure
+
+**Objective:** Detail the business operations and resources required for implementation.
+
+---
+
+## 1. Complete Description of the Operational Flow
+
+The FastTriage operational flow is designed to be intuitive for the patient and seamlessly integrated into the hospital routine, from the first contact to the delivery of the medical report.
+
+1.  **Interaction Start (Patient):** The patient, upon arriving at the hospital or from home, initiates the interaction with FastTriage via WhatsApp (e.g., by scanning a QR Code at the reception or accessing a link sent by the hospital).
+2.  **Conversational Triage (System):** The system, using the **WhatsApp Integration Adapter**, greets the patient and begins the adaptive questionnaire, which was previously configured by the hospital in the **Form Builder**.
+3.  **Response Processing (System):** Each free-text response from the patient is sent to the **LLM Parsing Service**. The IBM language model (LLM) interprets the intent, extracts medical entities (symptoms, duration, intensity), and structures them.
+4.  **Flow Adaptation (System):** Based on the structured data, the **Flow Engine** determines the next most relevant question, delving deeper where necessary (e.g., if the patient reports "chest pain," the system asks specific questions about that symptom).
+5.  **Report Generation (System):** At the end of the conversation, the **Summary Service** compiles all structured information into a concise, objective, and standardized clinical summary.
+6.  **Delivery (Hospital):** The report is made available in real-time on the hospital's dashboard (or integrated into the management system, such as MV Tasy, in a future phase) for the nursing staff and doctors.
+7.  **Validation and Care (Hospital):** The healthcare professional reviews the FastTriage report, validates the information, and proceeds with the consultation, already equipped with a complete history, thereby optimizing diagnosis and decision-making time.
+
+## 2. Brief Mention of Technological Infrastructure
+
+The infrastructure is based on a modular microservices architecture, ensuring scalability, security, and compliance (LGPD).
+
+* **Cloud Hosting:** The entire solution is hosted on **IBM Cloud**, ensuring high availability, robust security (essential for health data), and scalability.
+* **Communication Integration:** The patient interface is managed by the **Official WhatsApp Business API**, ensuring message delivery reliability.
+* **AI Processing:** The core intelligence is the **LLM Parsing Service**, which uses a large language model (LLM) from IBM (e.g., the Watsonx family) for natural language processing.
+* **Core Applications:** The microservices architecture includes:
+    * **Form Builder and Flow Engine:** A web application where hospital managers create and manage triage flows.
+    * **Summary Service:** The service responsible for aggregating LLM data and generating final reports.
+    * **WhatsApp Integration Adapter:** Manages the conversation state and communication between the patient and the AI services.
+* **Database:** Use of secure, encrypted databases on IBM Cloud, adhering to all LGPD regulations for storing sensitive health data.
+
+## 3. Definition of Team Roles and Responsibilities
+
+The initial team combines product, technology, and compliance competencies.
+
+* **Product (Management and Business):** Responsible for defining the product roadmap, managing relationships with hospitals (B2B clients), and ensuring that features meet market needs and generate operational value.
+* **Development (Infrastructure and Backend):** Focused on the development and maintenance of microservices, managing the IBM Cloud infrastructure, and ensuring system uptime, scalability, and performance.
+* **AI (LLM and Data):** Responsible for the integration with the IBM LLM, prompt engineering for the adaptive questionnaire, and ensuring accuracy in the extraction and structuring of medical data.
+* **Compliance & Medical Liaison:** Ensures the platform is in strict compliance with LGPD and health regulations. Acts as the bridge to medical consultants (such as the professional from USP) for the continuous clinical validation of triage flows.
+
+## 4. Description of Internal Processes
+
+Internal processes are focused on agility, security, and continuous customer support.
+
+* **Service Maintenance:** Continuous (24/7) monitoring of the IBM Cloud infrastructure, application logs, and API latency (LLM and WhatsApp) to ensure service stability.
+* **Updates:**
+    * **Triage Flows:** Hospitals can update their own flows via the **Form Builder**.
+    * **System:** Security updates and new features are deployed via CI/CD with minimal downtime during scheduled maintenance windows.
+* **Support (Pilot Phase):** High-touch support as described in the commercial plan. Includes onboarding, training for the nursing staff, and proactive feedback monitoring.
+* **Support (Commercial Phase):** Evolution to a scalable support model, including robust documentation, periodic updates, and on-demand technical assistance.
+
+## 5. Development of an Operational Timeline
+
+The implementation schedule follows the phases defined in the commercial strategy.
+
+* **Phase 1: MVP and Clinical Validation (End of 2025):**
+    * Finalization of the core modules (Form Builder, LLM Parsing, Summary Service).
+    * Technical validation of the integration with IBM Cloud and the WhatsApp API.
+    * Validation of triage flows with medical consultancy (USP) to ensure clinical safety and relevance.
+* **Phase 2: Pilot Project (Early 2026):**
+    * Implementation of FastTriage in 1 or 2 partner hospitals (as per the "Market Entry Strategy").
+    * Execution of the "Free or subsidized pilot" model to collect real-world data, measure the reduction in triage time, and gather direct feedback from nurses and doctors.
+* **Phase 3: Commercial Expansion (From Q2 2026):**
+    * Based on pilot metrics, begin the transition to the commercial pricing model ("Implementation + monthly license + variable usage").
+    * Initiate client acquisition activities (events, demonstrations) and scale the support and onboarding infrastructure.
