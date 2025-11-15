@@ -1,6 +1,5 @@
 ---
 title: Architecture
-
 ---
 
 # Triage AI – Architecture Overview (Markdown Guide)
